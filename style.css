@@ -1,16 +1,4 @@
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-   width: 100%;
-  height: 100%;
-   z-index: 99999;
-   display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-     align-items: center;
-    background: none repeat scroll 0 0 #FFFFFF;
-}
+
 
 
 @keyframes sk-innerCircle {
@@ -84,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 	overflow:hidden;
 }
 #headerwrap {
-	background: url(../img/forever.gif) no-repeat center top;
+	background: url(forever.gif) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -128,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap {	
-	background: url(../img/zhang.jpg) no-repeat center top;
+	background: url(zhang.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align: center;
@@ -155,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {	
-	background: url(../img/zhang.jpg) no-repeat center top;
+	background: url(zhang.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
