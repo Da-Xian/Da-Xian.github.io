@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/wen.ico">
+
+    <title>程蝶衣</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  	
+  		<div class="preloader">
+	<div class="sk-spinner  sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
+</div>
+  	
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index_vip.php">《霸王别姬》</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index_vip.php">人物图集</a></li>
+            <li class="active"><a href="about.php">人物介绍</a></li>
+            <li><a href="again.php">人物关系</a></li>
+            <li><a href="chenkaige.php">导演</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+	<div id="aboutwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+	    </div>
+	</div>
+	
+	<div class="container">
+		<div class="row centered mt mb">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>张国荣</h2>
+				<p>程蝶衣自小被做妓女的母亲卖到京戏班学唱青衣，对自己的身份是男是女产生了混淆之感。</p>
+				<p>师兄段小楼跟他感情甚佳，两人因合演《霸王别姬》而成为名角。</p>
+				<p>不料小楼娶妓女菊仙为妻在先，在文化大革命时期兄弟俩反目在后，使程蝶衣对毕生的艺术追求感到失落，终于在再次跟小楼排演本戏时自刎于台上。</p>
+			</div>
+            <div class="col-lg-10 col-lg-offset-1 mt">
+				<video class="glyphicon-sd-video" src="img/jianji.mp4" controls="controls" width="100%">
+			</div>
+		</div>
+	</div>
+	
+
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p>每一个人，有其依附之物。娃娃依附脐带，孩子依附娘亲，女人依附男人。有些人的魅力只在床上，离开了床即又死去。有些人的魅力只在台上，一下台即又死去。</p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>你可真是不疯魔不成活。唱戏得疯魔，不假，可要是活着也疯魔，在这人世上，在这凡人堆里，咱们可怎么活呀!</p>
+				</div>
+				<div class="col-lg-4">
+					<p>有些人的魅力只在床上，离开了床即又死去。<br />有些人的魅力只在台上，一下台即又死去。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+   <canvas id="christmasCanvas" style="top: 0px; left: 0px; z-index: 5000; position: fixed; pointer-events: none;" ></canvas>
+ <script>
+     var snow = function() {
+    if(1==1) {
+      var b = document.getElementById("christmasCanvas"), a = b.getContext("2d"), d = window.innerWidth, c = window.innerHeight;
+      b.width = d;
+      b.height = c;
+      for(var e = [], b = 0;b < 70;b++) {
+        e.push({x:Math.random() * d, y:Math.random() * c, r:Math.random() * 4 + 1, d:Math.random() * 70})
+      }
+      var h = 0;
+      window.intervral4Christmas = setInterval(function() {
+        a.clearRect(0, 0, d, c);
+        a.fillStyle = "#1abc9c";
+        a.shadowBlur = 5;
+        a.shadowColor = "#1abc9c";
+        a.beginPath();
+        for(var b = 0;b < 70;b++) {
+          var f = e[b];
+          a.moveTo(f.x, f.y);
+          a.arc(f.x, f.y, f.r, 0, Math.PI * 2, !0)
+        }
+        a.fill();
+        h += 0.01;
+        for(b = 0;b < 70;b++) {
+          if(f = e[b], f.y += Math.cos(h + f.d) + 1 + f.r / 2, f.x += Math.sin(h) * 2, f.x > d + 5 || f.x < -5 || f.y > c) {
+            e[b] = b % 3 > 0 ? {x:Math.random() * d, y:-10, r:f.r, d:f.d} : Math.sin(h) > 0 ? {x:-5, y:Math.random() * c, r:f.r, d:f.d} : {x:d + 5, y:Math.random() * c, r:f.r, d:f.d}
+          }
+        }
+      }, 70)
+    }
+  }
+  snow();
+</script>   
+     <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
